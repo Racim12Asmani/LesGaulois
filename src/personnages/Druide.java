@@ -4,10 +4,12 @@ public class Druide {
 
     private String nom;
     private int force;
+    private Chaudron chaudron; 
 
     public Druide(String nom, int force) {
         this.nom = nom;
         this.force = force;
+        this.chaudron = new Chaudron();
     }
 
     public String getNom() {
@@ -23,6 +25,7 @@ public class Druide {
     }
 
     public void fabriquerPotion(int quantite, int forcePotion) {
+    	chaudron.remplirChaudron(quantite, forcePotion);
     }
 
 
