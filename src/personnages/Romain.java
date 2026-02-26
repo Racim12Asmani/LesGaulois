@@ -19,4 +19,5 @@ public class Romain {
 	private String prendreParole() {
 		return "Les gaullois " + nom + " : ";
 	}
+	
 }
