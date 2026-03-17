@@ -12,9 +12,8 @@ public class TestGaulois {
 		Gaulois obelix = new Gaulois("Obelix", 16);
 		Romain minus = new Romain(6, "Minus");
 		Romain brutus = new Romain(2, "Brutus");
-		Druide panoramix = new Druide();
-		
-		
+		Druide panoramix = new Druide("Panoramix", 2);
+
 		asterix.parler("Bonjour Obélix");
 		obelix.parler("Bonjour Astérix. Ca te dirais d'aller chassser des sangliers ?)");
 		asterix.parler("Oui très bonne idée.");
@@ -22,6 +21,14 @@ public class TestGaulois {
 				+ " tombent nez à nez sur le romain " + minus.getNom());
 		for (int i = 0; i < 3; i++) {
 			asterix.frapper(minus);
+		}
+
+		panoramix.fabriquerPotion(4, 3);
+		panoramix.booster(obelix);
+		panoramix.booster(asterix);
+
+		for (int i = 0; i < 3; i++) {
+			asterix.frapper(brutus);
 		}
 	}
 }

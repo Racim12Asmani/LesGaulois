@@ -3,10 +3,15 @@ package personnages;
 public class Druide {
 	private String nom;
 	private int force;
-	private Chaudron chaudron;
+	private Chaudron chaudron = new Chaudron();
 
 	public String getNom() {
 		return nom;
+	}
+
+	public Druide(String nom, int force) {
+		this.nom = nom;
+		this.force = force;
 	}
 
 	public void parler(String texte) {
@@ -19,7 +24,7 @@ public class Druide {
 
 	public void fabriquerPotion(int quantite, int forcePotion) {
 		chaudron.remplirChaudron(quantite, forcePotion);
-		parler("J'ai concoté" + quantite + "doses de potion magique. Elle a une force de " + forcePotion + ".");
+		parler("J'ai concoté " + quantite + " doses de potion magique. Elle a une force de " + forcePotion + ".");
 	}
 
 	public void booster(Gaulois gaulois) {
@@ -33,8 +38,7 @@ public class Druide {
 				parler("Tiens " + nomGaulois + " un peu de potion magique.");
 			}
 		} else {
-			parler ("Désolé, " + nomGaulois + "il n'y a plus une seule goiute de potion ");
+			parler("Désolé, " + nomGaulois + "il n'y a plus une seule goiute de potion ");
 		}
-
 	}
 }
