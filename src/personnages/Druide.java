@@ -30,7 +30,7 @@ public class Druide {
 	public void booster(Gaulois gaulois) {
 		String nomGaulois = gaulois.getNom();
 		if (chaudron.resterPotion()) {
-			if (nom == "Obélix") {
+			if (nom == "Obelix") {
 				parler("Non," + nomGaulois + "Non !... Et tu le sais tres bien");
 			} else {
 				int forcePotion = chaudron.prendreLouche();
