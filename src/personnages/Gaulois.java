@@ -24,7 +24,7 @@ public class Gaulois {
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("asterix", 8);
 		Gaulois obelix = new Gaulois("Obelix", 16);
-		
+		test;
 		
 	}
 }
