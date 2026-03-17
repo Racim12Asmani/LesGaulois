@@ -11,7 +11,7 @@ public class TestGaulois {
 		Gaulois asterix = new Gaulois("Asterix", 8);
 		Gaulois obelix = new Gaulois("Obelix", 16);
 		Romain minus = new Romain(6, "Minus");
-		Romain brutus = new Romain(2, "Brutus");
+		Romain brutus = new Romain(14, "Brutus");
 		Druide panoramix = new Druide("Panoramix", 2);
 
 		asterix.parler("Bonjour Obélix");
