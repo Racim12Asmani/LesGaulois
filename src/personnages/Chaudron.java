@@ -7,4 +7,6 @@ public class Chaudron {
 	public boolean resterPotion() {
 		return quantitePotion > 0;
 	}
+	
+	
 }
